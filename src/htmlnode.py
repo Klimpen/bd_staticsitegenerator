@@ -15,9 +15,7 @@ class HTMLNode():
         if self.props:
             for prop in self.props:
                 temp = f"{prop}=\"{self.props.get(prop)}\" "
-                print(temp)
                 output += temp
-        print(f"props_to_html output = {output} ")
         return output 
     
     def __eq__(self, input_node):
